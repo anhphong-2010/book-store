@@ -1,0 +1,22 @@
+.search-form {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 102102102102;
+  .inputSearch {
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    padding: 0 0.5rem;
+    transition: 0.3s ease;
+    &::placeholder {
+      padding: 0rem;
+    }
+    &:focus {
+      outline: none;
+      background-color: rgb(231, 231, 231);
+      border: 1px solid #fa923f;
+    }
+  }
+}

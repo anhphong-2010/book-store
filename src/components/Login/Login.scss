@@ -1,0 +1,32 @@
+.login-wrapper {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ant-input,
+  .ant-input-password {
+    &:hover {
+      border-color: #fa923f;
+    }
+    &:focus {
+      border-color: #fa923f;
+      box-shadow: 0 0 0 2px rgba(255, 147, 24, 0.2);
+    }
+    &.ant-input-affix-wrapper-focused {
+      border-color: #fa923f;
+      box-shadow: 0 0 0 2px rgba(255, 147, 24, 0.2);
+    }
+  }
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: #fa923f;
+      border-color: #fa923f;
+      &:hover {
+        border-color: #fa923f;
+      }
+      &:focus {
+        border-color: #fa923f;
+      }
+    }
+  }
+}

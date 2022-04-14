@@ -1,0 +1,94 @@
+.infobook-container {
+  margin-top: 50px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8));
+  }
+  .infobook-row {
+    display: flex;
+    justify-content: space-around;
+    .infobook-image {
+      z-index: 40;
+      flex: 0 0 20%;
+      padding: 20px;
+      img {
+        width: 100%;
+        height: 270px;
+        box-shadow: 0 0 60px 1px rgba(100, 100, 100, 0.6);
+      }
+    }
+    .infobook-context {
+      z-index: 40;
+      flex: 0 0 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .content-title {
+        color: #fa923f;
+        text-shadow: 1px 1px 5px black, 0 0 25px #fa923f,
+        0 0 25px rgba(100, 100, 100, 0.8);
+        span {
+          margin-right: 10px;
+          color: rgba(255, 255, 255, 0.7);
+          font-weight: bold;
+          text-shadow: none;
+        }
+      }
+      .context-item {
+        color: #fa923f;
+        text-shadow: 1px 1px 5px black, 0 0 25px #fa923f,
+          0 0 25px rgba(100, 100, 100, 0.8);
+        span {
+          margin-right: 10px;
+          color: rgba(255, 255, 255, 0.7);
+          font-weight: bold;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .infobook-container {
+    .infobook-row {
+      .infobook-image {
+        z-index: 40;
+        flex: 0 0 40%;
+        img {
+          width: 100%;
+          height: 230px;
+        }
+      }
+      .infobook-context {
+        z-index: 40;
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .content-title {
+          color: #fa923f;
+          font-size: 14px;
+          span {
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+        .context-author {
+          color: #fa923f;
+          font-size: 12px;
+          span {
+            margin-right: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
